@@ -1,5 +1,5 @@
 # Diagonal-Difference
-Hackerrank function diagonalDifference(matrix)
+Hackerrank function diagonalDifference(arr)
 // length of input matrix.
     const length = matrix.length;
     let diagonal1 = 0, diagonal2 = 0;
