@@ -1,15 +1,16 @@
 # Diagonal-Difference
-Hackerrank function diagonalDifference(arr)
-// length of input matrix.
+
+function diagonalDifference(arr)
+// gelen matrisin uzunluğunu almak.
     const length = matrix.length;
     let diagonal1 = 0, diagonal2 = 0;
 
-    // Looping through the array and summing the diagonals.
+    // Dizi içinde dolaşma ve köşegenleri toplama
     for (let i = 0; i < length; i++) {
         // Calculating the primary diagonal.
         diagonal1 += matrix[i][i];
-        // Reversing the second dimension of array to calculate secondary diagonal.
+       // Tersten düşünüp sağdan sola köşegeni toplamak.
         diagonal2 += matrix[length - 1 - i][i]
     }
-    // return absolute difference value.
+    // Kesin fark değerini geri döndürme.
     return Math.abs(diagonal1 - diagonal2);  
